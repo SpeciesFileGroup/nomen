@@ -303,7 +303,6 @@
 
     <owl:ObjectProperty rdf:about="&obo;NOMEN_0000280">
         <rdfs:label xml:lang="en">ICZN suppression</rdfs:label>
-        <rdfs:domain rdf:resource="&obo;NOMEN_0000219"/>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000276"/>
     </owl:ObjectProperty>
     
@@ -754,6 +753,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000028">
         <rdfs:label xml:lang="en">string</rdfs:label>
+        <rdfs:isDefinedBy>An ordered set of symbols.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -763,6 +763,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000029">
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
+        <rdfs:isDefinedBy>The string that identifies a thing.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -772,6 +773,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000030">
         <rdfs:label xml:lang="en">biological name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000029"/>
+        <rdfs:isDefinedBy>The name that identifies a biological thing.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -780,6 +782,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000031">
         <rdfs:label xml:lang="en">obsolete class</rdfs:label>
+        <rdfs:isDefinedBy>The thing in NOMEN that is no long used.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -799,6 +802,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000107">
         <rdfs:label xml:lang="en">ICZN name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:isDefinedBy>The biological name that is applicable to animals.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -808,6 +812,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000109">
         <rdfs:label xml:lang="en">ICN name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:isDefinedBy>The biological name that is applicable to algae, fungi, or plants.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -817,6 +822,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000110">
         <rdfs:label xml:lang="en">ICNB name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:isDefinedBy>The biological name that is applicable to bacteria.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -826,6 +832,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000111">
         <rdfs:label xml:lang="en">ICTV name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:isDefinedBy>The biological name that is applicable to viruses.</rdfs:isDefinedBy>
     </owl:Class>
     
 
