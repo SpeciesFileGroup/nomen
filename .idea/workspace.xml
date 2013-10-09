@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b55c01-5341-48f3-80da-11d8f36272ca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ontology/catalog-v001.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/dmitriev.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nomen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381160683403" ignored="false" />
+    <file path="/Dummy.txt" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381204197816" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/above_family.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/above_family/class_rank.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/family_group/family.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/genus_group.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/family_group.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/above_family/subclass.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/family_group/subfamily.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/Gemfile" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381203408058" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/family_group/tribe.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/above_family/phylum.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/above_family/subphylum.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/nomenclatural_rank/icn/governed/genus_group/genus.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381168331324" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/app/models/taxon_name.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381203884251" ignored="false" />
+    <file path="/taxon_name.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381203816623" ignored="false" />
+    <file path="$PROJECT_DIR$/../taxonworks/spec/models/taxon_name_spec.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381204182921" ignored="false" />
+    <file path="/taxon_name_spec.rb" changelist="96b55c01-5341-48f3-80da-11d8f36272ca" time="1381203903620" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +120,18 @@
       <created>1381160527764</created>
       <updated>1381160527764</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update&#10;">
+      <created>1381160710699</created>
+      <updated>1381160710699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1612" height="912" extended-state="0" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1612" height="912" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
