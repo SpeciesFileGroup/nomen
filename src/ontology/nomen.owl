@@ -576,7 +576,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000006">
         <rdfs:label xml:lang="en">ICN subdivision of species</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000340"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
     </owl:Class>
     
 
@@ -772,6 +772,24 @@
     <owl:Class rdf:about="&obo;NOMEN_0000030">
         <rdfs:label xml:lang="en">biological name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0000031 -->
+
+    <owl:Class rdf:about="&obo;NOMEN_0000031">
+        <rdfs:label xml:lang="en">obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0000032 -->
+
+    <owl:Class rdf:about="&obo;NOMEN_0000032">
+        <rdfs:label xml:lang="en">latinized string</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
+        <rdfs:isDefinedBy>The string that is latinized.</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -1386,6 +1404,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000223">
         <rdfs:label xml:lang="en">ICZN available</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000032"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000107"/>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1958</obo:NOMEN_0000000>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">9999</obo:NOMEN_0000001>
@@ -1467,7 +1486,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000294">
         <rdfs:label xml:lang="en">ICZN governed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000293"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000031"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000317"/>
     </owl:Class>
     
@@ -1883,7 +1902,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000340">
         <rdfs:label xml:lang="en">ICN governed</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000031"/>
     </owl:Class>
     
 
@@ -1892,7 +1911,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000341">
         <rdfs:label xml:lang="en">ICN subdivision of family</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000340"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
     </owl:Class>
     
 
@@ -1941,7 +1960,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000346">
         <rdfs:label xml:lang="en">ICN subdivision of genus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000340"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
     </owl:Class>
     
 
@@ -2010,7 +2029,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000353">
         <rdfs:label xml:lang="en">ICN subdivision above family</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000340"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
     </owl:Class>
     
 
@@ -2095,7 +2114,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000362">
         <rdfs:label xml:lang="en">ICN subdivision of infraspecies</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000340"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000339"/>
     </owl:Class>
     
 
