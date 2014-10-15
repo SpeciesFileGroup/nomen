@@ -132,6 +132,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;NOMEN_0000035">
         <rdfs:label xml:lang="en">ICN sunctioned name</rdfs:label>
+        <obo:NOMEN_0000054>conservandum</obo:NOMEN_0000054>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000370"/>
     </owl:ObjectProperty>
     
@@ -211,18 +212,6 @@
         <rdfs:label xml:lang="en">ICZN uncertain placement</rdfs:label>
         <obo:NOMEN_0000017>Incertae Sedis</obo:NOMEN_0000017>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000264"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NOMEN_0000267 -->
-
-    <owl:ObjectProperty rdf:about="&obo;NOMEN_0000267">
-        <rdfs:label xml:lang="en">ICZN justified emendation</rdfs:label>
-        <obo:NOMEN_0000054>correctum</obo:NOMEN_0000054>
-        <obo:NOMEN_0000017>apograph</obo:NOMEN_0000017>
-        <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000031"/>
-        <rdfs:range rdf:resource="&obo;NOMEN_0000217"/>
     </owl:ObjectProperty>
     
 
@@ -482,6 +471,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;NOMEN_0000370">
         <rdfs:label xml:lang="en">ICN accepting</rdfs:label>
+        <obo:NOMEN_0000054>valid</obo:NOMEN_0000054>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000232"/>
         <rdfs:domain rdf:resource="&obo;NOMEN_0000383"/>
     </owl:ObjectProperty>
@@ -542,6 +532,7 @@
 
     <owl:ObjectProperty rdf:about="&obo;NOMEN_0000389">
         <rdfs:label xml:lang="en">ICN conserved name</rdfs:label>
+        <obo:NOMEN_0000054>conservandum</obo:NOMEN_0000054>
         <obo:NOMEN_0000018>nom. cons.</obo:NOMEN_0000018>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000370"/>
     </owl:ObjectProperty>
@@ -631,6 +622,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000005">
         <rdfs:label xml:lang="en">ICN autonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
     </owl:Class>
     
@@ -649,6 +641,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000007">
         <rdfs:label xml:lang="en">ICN validly published name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000383"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000008"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.2; 32-45</obo:NOMEN_0000012>
@@ -660,9 +653,10 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000008">
         <rdfs:label xml:lang="en">ICN invalidly published name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000383"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.2; 32-45</obo:NOMEN_0000012>
-        <rdfs:comment>invalidum</rdfs:comment>
+        <obo:NOMEN_0000054>invalidum</obo:NOMEN_0000054>
     </owl:Class>
     
 
@@ -671,6 +665,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000009">
         <rdfs:label xml:lang="en">ICN conserved name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000054>conservandum</obo:NOMEN_0000054>
         <obo:NOMEN_0000018>nom. cons.</obo:NOMEN_0000018>
@@ -682,6 +677,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000010">
         <rdfs:label xml:lang="en">ICN correct name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000011"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">11.1</obo:NOMEN_0000012>
@@ -694,6 +690,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000011">
         <rdfs:label xml:lang="en">ICN incorrect name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.5; 11</obo:NOMEN_0000012>
         <obo:NOMEN_0000054>invalidum</obo:NOMEN_0000054>
@@ -706,6 +703,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000013">
         <rdfs:label xml:lang="en">ICN not Latin</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">32</obo:NOMEN_0000012>
     </owl:Class>
     
@@ -715,6 +713,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000014">
         <rdfs:label xml:lang="en">ICN incorrect original spelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000386"/>
         <obo:NOMEN_0000054>negatum</obo:NOMEN_0000054>
     </owl:Class>
@@ -725,6 +724,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000015">
         <rdfs:label xml:lang="en">ICN superfluous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000386"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">52</obo:NOMEN_0000012>
         <obo:NOMEN_0000054>superfluum</obo:NOMEN_0000054>
@@ -736,6 +736,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000016">
         <rdfs:label xml:lang="en">ICN homonym</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000386"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">53</obo:NOMEN_0000012>
     </owl:Class>
@@ -747,6 +748,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000019">
         <rdfs:label xml:lang="en">ICN as synonym</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000012>36</obo:NOMEN_0000012>
         <obo:NOMEN_0000018>pro syn.</obo:NOMEN_0000018>
     </owl:Class>
@@ -757,6 +759,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000020">
         <rdfs:label xml:lang="en">ICN conserved spelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000054>conservandum</obo:NOMEN_0000054>
         <obo:NOMEN_0000018>orth. cons.</obo:NOMEN_0000018>
@@ -768,6 +771,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000021">
         <rdfs:label xml:lang="en">ICN adopted by Fries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000018>: Fr.</obo:NOMEN_0000018>
     </owl:Class>
@@ -778,6 +782,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000022">
         <rdfs:label xml:lang="en">ICN adopted by Persoon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000018>: Pers.</obo:NOMEN_0000018>
     </owl:Class>
@@ -788,6 +793,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000024">
         <rdfs:label xml:lang="en">ICZN Official Index of Rejected and Invalid Works</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000219"/>
     </owl:Class>
     
@@ -797,6 +803,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000025">
         <rdfs:label xml:lang="en">ICZN Official List of Works Approved as Available</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000223"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;dateTime">80.6.5</obo:NOMEN_0000002>
     </owl:Class>
@@ -808,6 +815,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000026">
         <rdfs:label xml:lang="en">ICZN excluded</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000054>nullum</obo:NOMEN_0000054>
     </owl:Class>
     
@@ -817,7 +825,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000027">
         <rdfs:label xml:lang="en">nomenclatural rank</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
     </owl:Class>
     
 
@@ -826,6 +834,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000028">
         <rdfs:label xml:lang="en">string</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>An ordered set of symbols.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -836,6 +845,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000029">
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The string that identifies a thing.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -846,6 +856,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000030">
         <rdfs:label xml:lang="en">biological name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000029"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The name that identifies a biological thing.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -855,7 +866,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000032">
         <rdfs:label xml:lang="en">latinized string</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The string that is latinized.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -885,6 +896,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000036">
         <rdfs:label xml:lang="en">scientific name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000001>9999</obo:NOMEN_0000001>
         <obo:NOMEN_0000054></obo:NOMEN_0000054>
         <obo:NOMEN_0000000>1</obo:NOMEN_0000000>
@@ -897,6 +909,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000037">
         <rdfs:label xml:lang="en">vernacular name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000030"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000017>common name</obo:NOMEN_0000017>
     </owl:Class>
     
@@ -907,6 +920,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000038">
         <rdfs:label xml:lang="en">ICZN electronic only publication before 2012</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000001>2011</obo:NOMEN_0000001>
     </owl:Class>
     
@@ -917,6 +931,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000039">
         <rdfs:label xml:lang="en">ICZN electronic publication without ISSN or ISBN</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000000>2012</obo:NOMEN_0000000>
     </owl:Class>
     
@@ -927,6 +942,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000040">
         <rdfs:label xml:lang="en">ICZN electronic publication  not in PDF format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000000>2012</obo:NOMEN_0000000>
     </owl:Class>
     
@@ -937,6 +953,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000041">
         <rdfs:label xml:lang="en">ICZN electronic publication not registered in ZooBank</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000000>2012</obo:NOMEN_0000000>
     </owl:Class>
     
@@ -947,6 +964,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000043">
         <rdfs:label xml:lang="en">ICZN homonym</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
     </owl:Class>
     
 
@@ -1037,6 +1055,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000107">
         <rdfs:label xml:lang="en">ICZN name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000000>1758</obo:NOMEN_0000000>
         <rdfs:isDefinedBy>The biological name that is applicable to animals.</rdfs:isDefinedBy>
         <obo:NOMEN_0000001>9999</obo:NOMEN_0000001>
@@ -1049,6 +1068,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000109">
         <rdfs:label xml:lang="en">ICN name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The biological name that is applicable to algae, fungi, or plants.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1059,6 +1079,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000110">
         <rdfs:label xml:lang="en">ICNB name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The biological name that is applicable to bacteria.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1069,6 +1090,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000111">
         <rdfs:label xml:lang="en">ICTV name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:isDefinedBy>The biological name that is applicable to viruses.</rdfs:isDefinedBy>
     </owl:Class>
     
@@ -1079,6 +1101,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000168">
         <rdfs:label xml:lang="en">ICZN unavailable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000107"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000223"/>
         <obo:NOMEN_0000054>invalidum</obo:NOMEN_0000054>
     </owl:Class>
@@ -1090,6 +1113,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000169">
         <rdfs:label xml:lang="en">ICZN non binomial</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
     </owl:Class>
     
 
@@ -1099,6 +1123,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000170">
         <rdfs:label xml:lang="en">ICZN not uninomial</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000169"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:complementOf rdf:resource="&obo;NOMEN_0000311"/>
@@ -1115,6 +1140,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000171">
         <rdfs:label xml:lang="en">ICZN subgenus not intercalare</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000169"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:complementOf rdf:resource="&obo;NOMEN_0000311"/>
@@ -1135,6 +1161,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000172">
         <rdfs:label xml:lang="en">ICZN species not binomial</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000169"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">5.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1145,6 +1172,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000173">
         <rdfs:label xml:lang="en">ICZN subspecies not trinomial</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000169"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">5.2</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1155,6 +1183,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000174">
         <rdfs:label xml:lang="en">ICZN nomen nudum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000054>nudum</obo:NOMEN_0000054>
         <obo:NOMEN_0000018>nom. nud.</obo:NOMEN_0000018>
     </owl:Class>
@@ -1166,6 +1195,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000175">
         <rdfs:label xml:lang="en">ICZN citation of unavailable name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.5.2</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1176,6 +1206,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000176">
         <rdfs:label xml:lang="en">ICZN conditionally proposed after 1960</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.5.1; 15.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1961</obo:NOMEN_0000000>
     </owl:Class>
@@ -1187,6 +1218,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000177">
         <rdfs:label xml:lang="en">ICZN published as synonym after 1960</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.6.3</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1961</obo:NOMEN_0000000>
     </owl:Class>
@@ -1198,6 +1230,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000178">
         <rdfs:label xml:lang="en">ICZN published as synonym and not validated before 1961</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.6.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">1960</obo:NOMEN_0000001>
     </owl:Class>
@@ -1209,6 +1242,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000179">
         <rdfs:label xml:lang="en">ICZN ambiguous generic placement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.9.3</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1219,6 +1253,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000180">
         <rdfs:label xml:lang="en">ICZN interpolated name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">6.2; 11.9.3.5</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1229,6 +1264,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000181">
         <rdfs:label xml:lang="en">ICZN no description</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">12.1; 13.1.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1239,6 +1275,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000182">
         <rdfs:label xml:lang="en">ICZN no diagnosis after 1930</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">13.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
     </owl:Class>
@@ -1250,6 +1287,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000183">
         <rdfs:label xml:lang="en">ICZN no type fixation after 1930</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">13.3</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
     </owl:Class>
@@ -1261,6 +1299,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000184">
         <rdfs:label xml:lang="en">ICZN replacement name without type fixation after 1930</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">13.3.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
     </owl:Class>
@@ -1283,6 +1322,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000186">
         <rdfs:label xml:lang="en">ICZN anonymous authorship after 1950</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">14</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1951</obo:NOMEN_0000000>
     </owl:Class>
@@ -1294,6 +1334,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000187">
         <rdfs:label xml:lang="en">ICZN not indicated as new after 1999</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">16.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">2000</obo:NOMEN_0000000>
     </owl:Class>
@@ -1305,6 +1346,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000188">
         <rdfs:label xml:lang="en">ICZN no type-genus citation after 1999</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">16.2</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">2000</obo:NOMEN_0000000>
     </owl:Class>
@@ -1316,6 +1358,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000189">
         <rdfs:label xml:lang="en">ICZN no type-specimen fixation after 1999</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">16.4.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">2000</obo:NOMEN_0000000>
     </owl:Class>
@@ -1327,6 +1370,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000190">
         <rdfs:label xml:lang="en">ICZN no type deposition statement after 1999</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">16.4.2</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">2000</obo:NOMEN_0000000>
     </owl:Class>
@@ -1338,6 +1382,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000191">
         <rdfs:label xml:lang="en">ICZN hypothetical concept</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1348,6 +1393,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000192">
         <rdfs:label xml:lang="en">ICZN name for teratological specimen</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.2</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1358,6 +1404,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000193">
         <rdfs:label xml:lang="en">ICZN name for hybrid</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.3</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1368,6 +1415,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000194">
         <rdfs:label xml:lang="en">ICZN temporary name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.5</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1378,6 +1426,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000195">
         <rdfs:label xml:lang="en">ICZN work of extant animal after 1930</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.6</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
     </owl:Class>
@@ -1389,6 +1438,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000196">
         <rdfs:label xml:lang="en">ICZN zoological formula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.7</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1399,6 +1449,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000197">
         <rdfs:label xml:lang="en">ICZN not for nomenclature</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.5; 8.3</obo:NOMEN_0000002>
         <obo:NOMEN_0000017 rdf:datatype="&xsd;dateTime">unpublished work</obo:NOMEN_0000017>
     </owl:Class>
@@ -1410,6 +1461,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000198">
         <rdfs:label xml:lang="en">ICZN variety or form after 1960</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">10.2; 15.2</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1961</obo:NOMEN_0000000>
     </owl:Class>
@@ -1421,6 +1473,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000199">
         <rdfs:label xml:lang="en">ICZN infrasubspecific</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">1.3.4; 10.2; 45.6.4.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1431,6 +1484,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000200">
         <rdfs:label xml:lang="en">ICZN unavailable under ICN</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">10.5</obo:NOMEN_0000002>
         <obo:NOMEN_0000054>abortivum</obo:NOMEN_0000054>
     </owl:Class>
@@ -1442,6 +1496,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000201">
         <rdfs:label xml:lang="en">ICZN not Latin</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.2; 11.9.4</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1452,6 +1507,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000202">
         <rdfs:label xml:lang="en">ICZN not nominative plural</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1462,6 +1518,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000203">
         <rdfs:label xml:lang="en">ICZN not from genus name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.1; 13.5; 29.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1472,6 +1529,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000204">
         <rdfs:label xml:lang="en">ICZN not based on available genus name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.1; 13.2; 64</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1482,6 +1540,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000205">
         <rdfs:label xml:lang="en">ICZN not scientific plural</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.2</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1492,6 +1551,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000206">
         <rdfs:label xml:lang="en">ICZN based on fossil genus formula</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.4</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1502,6 +1562,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000207">
         <rdfs:label xml:lang="en">ICZN based on suppressed genus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.1.5</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1512,6 +1573,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000208">
         <rdfs:label xml:lang="en">ICZN not latinized after 1899</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.2</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1900</obo:NOMEN_0000000>
     </owl:Class>
@@ -1523,6 +1585,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000209">
         <rdfs:label xml:lang="en">ICZN not latinized before 1900 and not accepted</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.7.2</obo:NOMEN_0000002>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">1899</obo:NOMEN_0000001>
     </owl:Class>
@@ -1534,6 +1597,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000210">
         <rdfs:label xml:lang="en">ICZN less than two letters</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000295"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.8; 11.9.1</obo:NOMEN_0000002>
     </owl:Class>
@@ -1545,6 +1609,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000211">
         <rdfs:label xml:lang="en">ICZN not noun in nominative singular</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.8</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1555,6 +1620,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000212">
         <rdfs:label xml:lang="en">ICZN not noun or adjective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">11.9.1</obo:NOMEN_0000002>
     </owl:Class>
     
@@ -1565,6 +1631,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000213">
         <rdfs:label xml:lang="en">ICZN unavailable and not used as valid before 2000</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">13.2.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">1960</obo:NOMEN_0000001>
@@ -1577,6 +1644,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000214">
         <rdfs:label xml:lang="en">ICZN unavailable and rejected by author before 2000</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">13.2.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">1931</obo:NOMEN_0000000>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">1960</obo:NOMEN_0000001>
@@ -1589,6 +1657,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000217">
         <rdfs:label xml:lang="en">ICZN incorrect original spelling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">19.3</obo:NOMEN_0000002>
         <obo:NOMEN_0000017>nothograph</obo:NOMEN_0000017>
         <obo:NOMEN_0000054>negatum</obo:NOMEN_0000054>
@@ -1602,6 +1671,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000218">
         <rdfs:label xml:lang="en">ICZN pre-Linnean</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000000 rdf:datatype="&xsd;dateTime">0</obo:NOMEN_0000000>
         <obo:NOMEN_0000001 rdf:datatype="&xsd;dateTime">1757</obo:NOMEN_0000001>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">3</obo:NOMEN_0000002>
@@ -1614,6 +1684,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000219">
         <rdfs:label xml:lang="en">ICZN suppressed</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000168"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000054>rejiciendum</obo:NOMEN_0000054>
     </owl:Class>
     
@@ -1623,6 +1694,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000220">
         <rdfs:label xml:lang="en">ICZN suppressed work</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000219"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">8.7.1</obo:NOMEN_0000002>
         <obo:NOMEN_0000054>oppressa</obo:NOMEN_0000054>
@@ -1634,6 +1706,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000221">
         <rdfs:label xml:lang="en">ICZN not in Official List of Available Names</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000219"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">10.7</obo:NOMEN_0000002>
     </owl:Class>
@@ -1644,6 +1717,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000222">
         <rdfs:label xml:lang="en">ICZN Official Index of Unavailable Names</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000219"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">9.9</obo:NOMEN_0000002>
     </owl:Class>
@@ -1655,6 +1729,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000223">
         <rdfs:label xml:lang="en">ICZN available</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000107"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000054>available</obo:NOMEN_0000054>
     </owl:Class>
     
@@ -1664,6 +1739,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000224">
         <rdfs:label xml:lang="en">ICZN valid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000223"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000226"/>
         <obo:NOMEN_0000054>valid</obo:NOMEN_0000054>
@@ -1675,6 +1751,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000225">
         <rdfs:label xml:lang="en">ICZN nomen dubium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000224"/>
         <obo:NOMEN_0000054>dubimum</obo:NOMEN_0000054>
     </owl:Class>
@@ -1685,6 +1762,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000226">
         <rdfs:label xml:lang="en">ICZN invalid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000223"/>
         <obo:NOMEN_0000054>invalidum</obo:NOMEN_0000054>
     </owl:Class>
@@ -1695,6 +1773,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000228">
         <rdfs:label xml:lang="en">ICZN Official List of Available Names</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000223"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">80</obo:NOMEN_0000002>
     </owl:Class>
@@ -1705,6 +1784,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000229">
         <rdfs:label xml:lang="en">ICZN Official Index of Available Names</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000223"/>
         <obo:NOMEN_0000002 rdf:datatype="&xsd;string">80</obo:NOMEN_0000002>
         <obo:NOMEN_0000017 rdf:datatype="&xsd;dateTime">conserved name</obo:NOMEN_0000017>
@@ -2409,9 +2489,10 @@
     <owl:Class rdf:about="&obo;NOMEN_0000377">
         <rdfs:label xml:lang="en">ICN not effectively published name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000109"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000383"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.1; 29; 30; 31</obo:NOMEN_0000012>
-        <rdfs:comment>invalidum</rdfs:comment>
+        <obo:NOMEN_0000054>invalidum</obo:NOMEN_0000054>
     </owl:Class>
     
 
@@ -2421,6 +2502,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000378">
         <rdfs:label xml:lang="en">ICN non binomial</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
     </owl:Class>
     
 
@@ -2430,8 +2512,9 @@
     <owl:Class rdf:about="&obo;NOMEN_0000379">
         <rdfs:label xml:lang="en">ICN nomen nudum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000018>nom.nud.</obo:NOMEN_0000018>
-        <rdfs:comment>nudum</rdfs:comment>
+        <obo:NOMEN_0000054>nudum</obo:NOMEN_0000054>
     </owl:Class>
     
 
@@ -2441,7 +2524,8 @@
     <owl:Class rdf:about="&obo;NOMEN_0000380">
         <rdfs:label xml:lang="en">ICN rejected publication</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
-        <rdfs:comment>oppressa</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
+        <obo:NOMEN_0000054>oppressa</obo:NOMEN_0000054>
     </owl:Class>
     
 
@@ -2451,7 +2535,8 @@
     <owl:Class rdf:about="&obo;NOMEN_0000381">
         <rdfs:label xml:lang="en">ICN provisional name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
-        <rdfs:comment>provisorium</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
+        <obo:NOMEN_0000054>provisorium</obo:NOMEN_0000054>
     </owl:Class>
     
 
@@ -2461,6 +2546,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000382">
         <rdfs:label xml:lang="en">ICN tautonym</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
     </owl:Class>
     
 
@@ -2470,6 +2556,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000383">
         <rdfs:label xml:lang="en">ICN effectively published name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000109"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.1; 29; 30; 31</obo:NOMEN_0000012>
     </owl:Class>
     
@@ -2480,6 +2567,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000384">
         <rdfs:label xml:lang="en">ICN legitimate name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <owl:disjointWith rdf:resource="&obo;NOMEN_0000386"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.3; 6.4</obo:NOMEN_0000012>
         <obo:NOMEN_0000054>legitimate</obo:NOMEN_0000054>
@@ -2491,6 +2579,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000385">
         <rdfs:label xml:lang="en">ICN sanctioned name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000054>rejiciendum</obo:NOMEN_0000054>
     </owl:Class>
@@ -2502,6 +2591,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000386">
         <rdfs:label xml:lang="en">ICN illegitimate name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <obo:NOMEN_0000012 rdf:datatype="&xsd;string">6.3; 6.4</obo:NOMEN_0000012>
         <obo:NOMEN_0000054>illegitimum</obo:NOMEN_0000054>
     </owl:Class>
@@ -2512,6 +2602,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000387">
         <rdfs:label xml:lang="en">ICN nomen novum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
         <obo:NOMEN_0000054>novum</obo:NOMEN_0000054>
         <obo:NOMEN_0000018>nom. nov.</obo:NOMEN_0000018>
@@ -2523,6 +2614,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000388">
         <rdfs:label xml:lang="en">ICN nothotaxon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000185"/>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000384"/>
     </owl:Class>
     
@@ -2553,7 +2645,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000211"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000183"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
         </owl:members>
@@ -2561,20 +2653,26 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000347"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000348"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000349"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000350"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000351"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000352"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000107"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000109"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000110"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000111"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000214"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000206"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000173"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -2602,7 +2700,181 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000184"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000312"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000313"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000314"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000315"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000316"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000185"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000204"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000205"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000190"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000202"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000180"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000209"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000179"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000172"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000189"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000188"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000364"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000365"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000366"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000367"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000368"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000230"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000231"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000232"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000233"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000211"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000214"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000207"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000307"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000308"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000309"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000310"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000203"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000199"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000171"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
         </owl:members>
@@ -2618,17 +2890,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000312"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000313"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000314"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000315"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000316"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000189"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000212"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
         </owl:members>
@@ -2636,17 +2898,58 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000173"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000171"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000184"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000342"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000343"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000344"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000345"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000208"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000213"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000347"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000348"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000349"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000350"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000351"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000352"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000354"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000355"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000356"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000357"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000358"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000359"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000360"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000361"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -2678,50 +2981,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000190"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000230"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000231"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000232"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000233"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000107"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000109"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000110"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000111"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000212"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000364"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000365"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000366"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000367"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000368"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;NOMEN_0000003"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000296"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000297"/>
@@ -2737,177 +2996,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000185"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000342"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000343"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000344"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000345"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000203"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000188"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;NOMEN_0000170"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000171"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000172"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000173"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000307"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000308"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000309"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000310"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000204"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000213"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000172"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000202"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000179"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000183"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000208"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000354"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000355"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000356"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000357"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000358"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000359"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000360"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000361"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000207"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000199"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000206"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000205"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000180"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000295"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000209"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
