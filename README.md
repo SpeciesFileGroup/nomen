@@ -41,6 +41,11 @@ Contributing
 
 NOMEN is intended to be a community resource.  We welcome all aspects of its development, from assiting in its curration to helping to apply it practically.  The most straightforwad mechanism for asking questions, reporting problems, or requesting additions to the ontology is the [issue tracker][3].  Alternately there is a [listserv][5].  
 
+Funding
+-------
+
+This project was funded in part by NSF-ABI-1356381.  Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
+
 
 [1]: http://iczn.org/
 [2]: http://www.iapt-taxon.org/nomen/main.php
