@@ -1368,7 +1368,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000083 -->
 
     <owl:Class rdf:about="&obo;NOMEN_0000083">
-        <rdfs:label xml:lang="en">ICNB validly published name</rdfs:label>
+        <rdfs:label xml:lang="en">ICNB invalidly published name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000081"/>
     </owl:Class>
     
@@ -1377,7 +1377,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000084 -->
 
     <owl:Class rdf:about="&obo;NOMEN_0000084">
-        <rdfs:label xml:lang="en">ICNB invalidly published name</rdfs:label>
+        <rdfs:label xml:lang="en">ICNB validly published name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000081"/>
     </owl:Class>
     
@@ -3232,14 +3232,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;NOMEN_0000208"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
-            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;NOMEN_0000003"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000296"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000297"/>
@@ -3250,6 +3242,14 @@
             <rdf:Description rdf:about="&obo;NOMEN_0000302"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000304"/>
             <rdf:Description rdf:about="&obo;NOMEN_0000305"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;NOMEN_0000208"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000306"/>
+            <rdf:Description rdf:about="&obo;NOMEN_0000311"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
