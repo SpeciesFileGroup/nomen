@@ -982,7 +982,7 @@
 
     <owl:Class rdf:about="&obo;NOMEN_0000028">
         <rdfs:label xml:lang="en">string</rdfs:label>
-        <rdfs:isDefinedBy>An ordered set of symbols.</rdfs:isDefinedBy>
+        <rdfs:comment>An ordered set of symbols.</rdfs:comment>
     </owl:Class>
     
 
@@ -992,7 +992,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000029">
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
-        <rdfs:isDefinedBy>The string that identifies a thing.</rdfs:isDefinedBy>
+        <rdfs:comment>The string that identifies a thing.</rdfs:comment>
     </owl:Class>
     
 
@@ -1002,7 +1002,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000030">
         <rdfs:label xml:lang="en">biological name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000029"/>
-        <rdfs:isDefinedBy>The name that identifies a biological thing.</rdfs:isDefinedBy>
+        <rdfs:comment>The name that identifies a biological thing.</rdfs:comment>
     </owl:Class>
     
 
@@ -1012,7 +1012,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000032">
         <rdfs:label xml:lang="en">latinized string</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000028"/>
-        <rdfs:isDefinedBy>The string that is latinized.</rdfs:isDefinedBy>
+        <rdfs:comment>The string that is latinized.</rdfs:comment>
     </owl:Class>
     
 
@@ -1558,7 +1558,7 @@
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
         <obo:NOMEN_0000000>1758</obo:NOMEN_0000000>
         <obo:NOMEN_0000001>9999</obo:NOMEN_0000001>
-        <rdfs:isDefinedBy>The biological name that is applicable to animals.</rdfs:isDefinedBy>
+        <rdfs:comment>The biological name that is applicable to animals.</rdfs:comment>
     </owl:Class>
     
 
@@ -1568,7 +1568,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000109">
         <rdfs:label xml:lang="en">ICN name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
-        <rdfs:isDefinedBy>The biological name that is applicable to algae, fungi, or plants.</rdfs:isDefinedBy>
+        <rdfs:comment>The biological name that is applicable to algae, fungi, or plants.</rdfs:comment>
     </owl:Class>
     
 
@@ -1578,7 +1578,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000110">
         <rdfs:label xml:lang="en">ICNP name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
-        <rdfs:isDefinedBy>The biological name that is applicable to bacteria.</rdfs:isDefinedBy>
+        <rdfs:comment>The biological name that is applicable to bacteria.</rdfs:comment>
     </owl:Class>
     
 
@@ -1588,7 +1588,7 @@
     <owl:Class rdf:about="&obo;NOMEN_0000111">
         <rdfs:label xml:lang="en">ICTV name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NOMEN_0000036"/>
-        <rdfs:isDefinedBy>The biological name that is applicable to viruses.</rdfs:isDefinedBy>
+        <rdfs:comment>The biological name that is applicable to viruses.</rdfs:comment>
     </owl:Class>
     
 
