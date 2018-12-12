@@ -10,8 +10,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/dmitriev/ontologies/2013/8/untitled-ontology-6#"
-     xml:base="http://www.semanticweb.org/dmitriev/ontologies/2013/8/untitled-ontology-6"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
