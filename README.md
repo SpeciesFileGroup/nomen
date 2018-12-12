@@ -6,7 +6,7 @@ NOMEN is a nomenclatural ontology for biological names (not concepts).
 Overview
 --------
 
-The governed rules of biological nomenclature are complex and varied.  NOMEN seeks to provide a stable, logically defined basis for applying these rules to names (strings of text). NOMEN _says nothing about taxa_ (biological entities). Using it will not help you determine, for example, which taxa (biological entities) are real, accepted, well defined, or extinct. The rules encoded in NOMEN are strictly tied to corresponding rules of nomenclature, at present the [ICZN][1] and [ICN][2].  
+The governed rules of biological nomenclature are complex and varied.  NOMEN seeks to provide a stable, logically defined basis for applying these rules to names (strings of text). NOMEN _says nothing about taxa_ (biological entities). Using it will not help you determine, for example, which taxa (biological entities) are real, accepted, well defined, or extinct. The rules encoded in NOMEN are strictly tied to corresponding rules of nomenclature, at present the [ICZN][1], [ICN][2], [ICTV][6], and [ICNP][7].  
 
 NOMEN consists of primarily of two types of data.  Classes classify instances of names (things like the string "Apis melifera") and Object Properties define relationships between those instances.
 
@@ -35,7 +35,6 @@ Citing
 
 NOMEN is presently authored by Dmitry Dmitriev and Matt Yoder. Major conceptual contributions came from Rich Pyle. Its development is supported by the Species File Group. A suggested citation is `Dmitriev, D.A. and Yoder, M. NOMEN. <accessed on>. Available at https://github.com/SpeciesFileGroup/nomen.`
 
-
 Contributing
 ------------
 
@@ -52,4 +51,6 @@ This project was funded in part by NSF-ABI-1356381.  Any opinions, findings and 
 [3]: https://github.com/SpeciesFileGroup/nomen/issues  
 [4]: http://protege.stanford.edu/
 [5]: https://groups.google.com/forum/#!forum/nomen-discuss
+[6]: https://talk.ictvonline.org/
+[7]: http://www.the-icsp.org/
 
