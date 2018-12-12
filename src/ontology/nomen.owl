@@ -130,7 +130,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000035 -->
 
     <owl:ObjectProperty rdf:about="&obo;NOMEN_0000035">
-        <rdfs:label xml:lang="en">ICN sunctioned name</rdfs:label>
+        <rdfs:label xml:lang="en">ICN sanctioned name</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&obo;NOMEN_0000370"/>
     </owl:ObjectProperty>
     
