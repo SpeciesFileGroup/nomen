@@ -798,6 +798,362 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001008">
+        <rdfs:label xml:lang="en">ICNCP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001008"/>
+        <rdfs:label xml:lang="en">ICNCP accepting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001010 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001008"/>
+        <rdfs:label xml:lang="en">ICNCP unaccepting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001009"/>
+        <rdfs:label xml:lang="en">ICNCP conserved name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001010"/>
+        <rdfs:label xml:lang="en">ICNCP superfluous</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001010"/>
+        <rdfs:label xml:lang="en">ICNCP replaced name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001017 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001017">
+        <rdfs:label xml:lang="en">typification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001018">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001017"/>
+        <rdfs:label xml:lang="en">family</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001019">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001017"/>
+        <rdfs:label xml:lang="en">genus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001020 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001020">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001017"/>
+        <rdfs:label xml:lang="en">species</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001021">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001019"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</NOMEN_0000002>
+        <rdfs:label xml:lang="en">fixed in the original publication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001022">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001019"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</NOMEN_0000002>
+        <rdfs:label xml:lang="en">not fixed in the original publication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001023">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001021"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.1</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by tautonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001024">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001023"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.4</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by absolute tautonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001025">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001023"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.5</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by Linnaean tautonomy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001026 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001026">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001022"/>
+        <NOMEN_0000002 xml:lang="en">81.1</NOMEN_0000002>
+        <rdfs:label>type species by using the plenary power by the Commission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001027">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001022"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.1</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by subsequent designation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001028 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001028">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001022"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.3</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by subsequent monotypy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001029">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001021"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.2</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by original designation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001030">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001021"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.3</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type species by original monotypy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001031">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.1</NOMEN_0000002>
+        <rdfs:label xml:lang="en">holotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001032 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001032">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NOMEN_0000002>
+        <rdfs:label xml:lang="en">neotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001033 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001033">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002>72.4.5</NOMEN_0000002>
+        <rdfs:label xml:lang="en">paratype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001034 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001034">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</NOMEN_0000002>
+        <rdfs:label xml:lang="en">lectotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001035 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001035">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002>74.1.3</NOMEN_0000002>
+        <rdfs:label xml:lang="en">paralectotype</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001036">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001020"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73.2</NOMEN_0000002>
+        <rdfs:label xml:lang="en">syntypes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001037 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001037">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001018"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</NOMEN_0000002>
+        <rdfs:label xml:lang="en">type genus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001038 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001038">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original genus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001039">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original subgenus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001040">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original species</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001041 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001041">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original subspecies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001042 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001042">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original variety</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001043 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001043">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000132"/>
+        <rdfs:label xml:lang="en">ICZN original form</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001044 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001044">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000131"/>
+        <rdfs:label xml:lang="en">ICZN genus in combination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001045 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001045">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000131"/>
+        <rdfs:label xml:lang="en">ICZN subgenus in combination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001046 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001046">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000131"/>
+        <rdfs:label xml:lang="en">ICZN species in combination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001047 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001047">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000131"/>
+        <rdfs:label xml:lang="en">ICZN subspecies in combination</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001048 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001048">
+        <rdfs:label xml:lang="en">classified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1767,8 +2123,9 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000109"/>
-        <rdfs:label xml:lang="en">ICN horticultural</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
+        <rdfs:comment>The biological name that is applicable to plant cultivars.</rdfs:comment>
+        <rdfs:label xml:lang="en">ICNCP name</rdfs:label>
     </owl:Class>
     
 
@@ -3212,6 +3569,105 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000388">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000384"/>
         <rdfs:label xml:lang="en">ICN nothotaxon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <rdfs:label xml:lang="en">ICNCP cultivar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <rdfs:label xml:lang="en">ICNCP_group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <rdfs:label xml:lang="en">ICNCP grex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000027"/>
+        <rdfs:label xml:lang="en">ICNCP nomenclatural rank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000130"/>
+        <rdfs:label xml:lang="en">ICNCP established name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001004"/>
+        <rdfs:label xml:lang="en">ICNCP accepted name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <rdfs:label xml:lang="en">ICNCP graft-chimaera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001005"/>
+        <rdfs:label xml:lang="en">ICNCP conserved name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001004"/>
+        <rdfs:label xml:lang="en">ICNCP rejected name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000130"/>
+        <rdfs:label xml:lang="en">ICNCP unestablished name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001012"/>
+        <rdfs:label xml:lang="en">ICNCP superfluous</rdfs:label>
     </owl:Class>
     
 
