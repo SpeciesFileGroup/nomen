@@ -78,6 +78,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001050 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001050">
+        <rdfs:label xml:lang="en">parent rank</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1178,7 +1186,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
-        <rdfs:label xml:lang="en">ICZN nonorder</rdfs:label>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000330"/>
+        <rdfs:label xml:lang="en">ICZN nanorder</rdfs:label>
     </owl:Class>
     
 
@@ -1402,7 +1411,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000029"/>
         <rdfs:comment>The symbol that identifies a biological thing.</rdfs:comment>
         <rdfs:label xml:lang="en">biological name</rdfs:label>
     </owl:Class>
@@ -1696,6 +1704,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000066"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000070"/>
         <rdfs:label xml:lang="en">ICNP species</rdfs:label>
     </owl:Class>
     
@@ -1705,6 +1714,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000066"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000067"/>
         <rdfs:label xml:lang="en">ICNP subspecies</rdfs:label>
     </owl:Class>
     
@@ -1714,6 +1724,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000065"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000074"/>
         <rdfs:label xml:lang="en">ICNP genus</rdfs:label>
     </owl:Class>
     
@@ -1723,6 +1734,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000065"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000069"/>
         <rdfs:label xml:lang="en">ICNP subgenus</rdfs:label>
     </owl:Class>
     
@@ -1732,6 +1744,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000064"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000076"/>
         <rdfs:label xml:lang="en">ICNP family</rdfs:label>
     </owl:Class>
     
@@ -1741,6 +1754,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000064"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000071"/>
         <rdfs:label xml:lang="en">ICNP subfamily</rdfs:label>
     </owl:Class>
     
@@ -1750,6 +1764,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000064"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000072"/>
         <rdfs:label xml:lang="en">ICNP tribe</rdfs:label>
     </owl:Class>
     
@@ -1759,6 +1774,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000064"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000073"/>
         <rdfs:label xml:lang="en">ICNP subtribe</rdfs:label>
     </owl:Class>
     
@@ -1768,6 +1784,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000078"/>
         <rdfs:label xml:lang="en">ICNP order</rdfs:label>
     </owl:Class>
     
@@ -1777,6 +1794,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000075"/>
         <rdfs:label xml:lang="en">ICNP suborder</rdfs:label>
     </owl:Class>
     
@@ -1786,6 +1804,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000080"/>
         <rdfs:label xml:lang="en">ICNP class</rdfs:label>
     </owl:Class>
     
@@ -1795,6 +1814,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000077"/>
         <rdfs:label xml:lang="en">ICNP subclass</rdfs:label>
     </owl:Class>
     
@@ -1804,6 +1824,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000062"/>
         <rdfs:label xml:lang="en">ICNP kingdom</rdfs:label>
     </owl:Class>
     
@@ -1813,6 +1834,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000063"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000079"/>
         <rdfs:label xml:lang="en">ICNP phylum</rdfs:label>
     </owl:Class>
     
@@ -2009,6 +2031,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>ord.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001054"/>
         <rdfs:label xml:lang="en">ICTV order</rdfs:label>
     </owl:Class>
     
@@ -2019,6 +2042,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>fam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000114"/>
         <rdfs:label xml:lang="en">ICTV family</rdfs:label>
     </owl:Class>
     
@@ -2029,6 +2053,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>subfam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000115"/>
         <rdfs:label xml:lang="en">ICTV subfamily</rdfs:label>
     </owl:Class>
     
@@ -2039,6 +2064,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>gen.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000116"/>
         <rdfs:label xml:lang="en">ICTV genus</rdfs:label>
     </owl:Class>
     
@@ -2049,6 +2075,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>sp.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000117"/>
         <rdfs:label xml:lang="en">ICTV species</rdfs:label>
     </owl:Class>
     
@@ -2779,6 +2806,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000296">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000302"/>
         <rdfs:label xml:lang="en">ICZN epifamily</rdfs:label>
     </owl:Class>
     
@@ -2789,6 +2817,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000297">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>fam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000296"/>
         <rdfs:label xml:lang="en">ICZN family</rdfs:label>
     </owl:Class>
     
@@ -2798,6 +2827,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000298">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000299"/>
         <rdfs:label xml:lang="en">ICZN infrafamily</rdfs:label>
     </owl:Class>
     
@@ -2808,6 +2838,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000299">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>subfam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000300"/>
         <rdfs:label xml:lang="en">ICZN subfamily</rdfs:label>
     </owl:Class>
     
@@ -2817,7 +2848,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
-        <rdfs:label xml:lang="en">ICZN supersubsubfamily</rdfs:label>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000297"/>
+        <rdfs:label xml:lang="en">ICZN supersubfamily</rdfs:label>
     </owl:Class>
     
 
@@ -2827,6 +2859,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>subtr.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000305"/>
         <rdfs:label xml:lang="en">ICZN subtribe</rdfs:label>
     </owl:Class>
     
@@ -2837,6 +2870,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000302">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>superfam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000003"/>
         <rdfs:label xml:lang="en">ICZN superfamily</rdfs:label>
     </owl:Class>
     
@@ -2847,6 +2881,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000304">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>supertr.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000298"/>
         <rdfs:label xml:lang="en">ICZN supertribe</rdfs:label>
     </owl:Class>
     
@@ -2857,6 +2892,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>tr.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000304"/>
         <rdfs:label xml:lang="en">ICZN tribe</rdfs:label>
     </owl:Class>
     
@@ -2876,6 +2912,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000307">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
         <NOMEN_0000018>gen.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000308"/>
         <rdfs:label xml:lang="en">ICZN genus</rdfs:label>
     </owl:Class>
     
@@ -2885,6 +2922,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000308">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001053"/>
         <rdfs:label xml:lang="en">ICZN supergenus</rdfs:label>
     </owl:Class>
     
@@ -2894,6 +2932,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000310"/>
         <rdfs:label xml:lang="en">ICZN infragenus</rdfs:label>
     </owl:Class>
     
@@ -2904,6 +2943,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000310">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
         <NOMEN_0000018>sgen.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001051"/>
         <rdfs:label xml:lang="en">ICZN subgenus</rdfs:label>
     </owl:Class>
     
@@ -2923,6 +2963,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000312">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
         <NOMEN_0000018>sp.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000315"/>
         <rdfs:label xml:lang="en">ICZN species</rdfs:label>
     </owl:Class>
     
@@ -2932,6 +2973,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000314"/>
         <rdfs:label xml:lang="en">ICZN superspecies</rdfs:label>
     </owl:Class>
     
@@ -2941,6 +2983,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000309"/>
         <rdfs:label xml:lang="en">ICZN supersuperspecies</rdfs:label>
     </owl:Class>
     
@@ -2950,6 +2993,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000315">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000067"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000118"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000312"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000363"/>
+        </owl:disjointUnionOf>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000313"/>
         <rdfs:label xml:lang="en">ICZN subsuperspecies</rdfs:label>
     </owl:Class>
     
@@ -2960,6 +3010,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000316">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
         <NOMEN_0000018>subsp.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000312"/>
         <rdfs:label xml:lang="en">ICZN subspecies</rdfs:label>
     </owl:Class>
     
@@ -2969,7 +3020,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000317">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000293"/>
-        <rdfs:label xml:lang="en">ICZN above family-group</rdfs:label>
+        <rdfs:label xml:lang="en">ICZN higher classification group</rdfs:label>
     </owl:Class>
     
 
@@ -2978,6 +3029,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000334"/>
         <rdfs:label xml:lang="en">ICZN class</rdfs:label>
     </owl:Class>
     
@@ -2987,6 +3039,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000319">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000335"/>
         <rdfs:label xml:lang="en">ICZN cohort</rdfs:label>
     </owl:Class>
     
@@ -2996,6 +3049,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000320">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000329"/>
         <rdfs:label xml:lang="en">ICZN infraclass</rdfs:label>
     </owl:Class>
     
@@ -3005,6 +3059,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000321">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000331"/>
         <rdfs:label xml:lang="en">ICZN infrakingdom</rdfs:label>
     </owl:Class>
     
@@ -3014,6 +3069,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000332"/>
         <rdfs:label xml:lang="en">ICZN infraorder</rdfs:label>
     </owl:Class>
     
@@ -3023,6 +3079,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000323">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000333"/>
         <rdfs:label xml:lang="en">ICZN infraphylum</rdfs:label>
     </owl:Class>
     
@@ -3032,6 +3089,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000324">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000336"/>
         <rdfs:label xml:lang="en">ICZN kingdom</rdfs:label>
     </owl:Class>
     
@@ -3041,6 +3099,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000325">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000319"/>
         <rdfs:label xml:lang="en">ICZN magnorder</rdfs:label>
     </owl:Class>
     
@@ -3050,6 +3109,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000326">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000337"/>
         <rdfs:label xml:lang="en">ICZN mirorder</rdfs:label>
     </owl:Class>
     
@@ -3059,6 +3119,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000327">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000326"/>
         <rdfs:label xml:lang="en">ICZN order</rdfs:label>
     </owl:Class>
     
@@ -3068,6 +3129,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000328">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000338"/>
         <rdfs:label xml:lang="en">ICZN phylum</rdfs:label>
     </owl:Class>
     
@@ -3077,6 +3139,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000329">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000318"/>
         <rdfs:label xml:lang="en">ICZN subclass</rdfs:label>
     </owl:Class>
     
@@ -3086,6 +3149,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000322"/>
         <rdfs:label xml:lang="en">ICZN parvorder</rdfs:label>
     </owl:Class>
     
@@ -3095,6 +3159,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000331">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000324"/>
         <rdfs:label xml:lang="en">ICZN subkingdom</rdfs:label>
     </owl:Class>
     
@@ -3104,6 +3169,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000332">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000327"/>
         <rdfs:label xml:lang="en">ICZN suborder</rdfs:label>
     </owl:Class>
     
@@ -3113,6 +3179,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000333">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000328"/>
         <rdfs:label xml:lang="en">ICZN subphylum</rdfs:label>
     </owl:Class>
     
@@ -3122,6 +3189,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000334">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000323"/>
         <rdfs:label xml:lang="en">ICZN superclass</rdfs:label>
     </owl:Class>
     
@@ -3131,6 +3199,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000335">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000320"/>
         <rdfs:label xml:lang="en">ICZN supercohort</rdfs:label>
     </owl:Class>
     
@@ -3140,6 +3209,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000336">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000293"/>
         <rdfs:label xml:lang="en">ICZN superkingdom</rdfs:label>
     </owl:Class>
     
@@ -3149,6 +3219,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000337">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000325"/>
         <rdfs:label xml:lang="en">ICZN superorder</rdfs:label>
     </owl:Class>
     
@@ -3158,6 +3229,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000338">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000321"/>
         <rdfs:label xml:lang="en">ICZN superphylum</rdfs:label>
     </owl:Class>
     
@@ -3187,6 +3259,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000341"/>
         <NOMEN_0000017>familia</NOMEN_0000017>
         <NOMEN_0000018>fam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000359"/>
         <rdfs:label xml:lang="en">ICN family</rdfs:label>
     </owl:Class>
     
@@ -3198,6 +3271,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000341"/>
         <NOMEN_0000017>subfamilia</NOMEN_0000017>
         <NOMEN_0000018>subfam.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000342"/>
         <rdfs:label xml:lang="en">ICN subfamily</rdfs:label>
     </owl:Class>
     
@@ -3208,6 +3282,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000344">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000341"/>
         <NOMEN_0000018>subtr.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000345"/>
         <rdfs:label xml:lang="en">ICN subtribe</rdfs:label>
     </owl:Class>
     
@@ -3218,6 +3293,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000345">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000341"/>
         <NOMEN_0000018>tr.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000343"/>
         <rdfs:label xml:lang="en">ICN tribe</rdfs:label>
     </owl:Class>
     
@@ -3237,6 +3313,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000018>gen.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000344"/>
         <rdfs:label xml:lang="en">ICN genus</rdfs:label>
     </owl:Class>
     
@@ -3247,6 +3324,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000348">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000018>sgen.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000347"/>
         <rdfs:label xml:lang="en">ICN subgenus</rdfs:label>
     </owl:Class>
     
@@ -3258,6 +3336,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000017>sectio</NOMEN_0000017>
         <NOMEN_0000018>sect.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000348"/>
         <rdfs:label xml:lang="en">ICN section</rdfs:label>
     </owl:Class>
     
@@ -3268,6 +3347,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000350">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000018>ser.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000351"/>
         <rdfs:label xml:lang="en">ICN series</rdfs:label>
     </owl:Class>
     
@@ -3279,6 +3359,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000017>subsectio</NOMEN_0000017>
         <NOMEN_0000018>subsect.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000349"/>
         <rdfs:label xml:lang="en">ICN subsection</rdfs:label>
     </owl:Class>
     
@@ -3289,6 +3370,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000352">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000346"/>
         <NOMEN_0000018>subser.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000350"/>
         <rdfs:label xml:lang="en">ICN subseries</rdfs:label>
     </owl:Class>
     
@@ -3309,6 +3391,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>classis</NOMEN_0000017>
         <NOMEN_0000018>cl.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000360"/>
         <rdfs:label xml:lang="en">ICN class</rdfs:label>
     </owl:Class>
     
@@ -3320,6 +3403,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>cohors, nixus, alliance, reihe, ordo</NOMEN_0000017>
         <NOMEN_0000018>ord.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000358"/>
         <rdfs:label xml:lang="en">ICN order</rdfs:label>
     </owl:Class>
     
@@ -3330,6 +3414,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000356">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>division</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000361"/>
         <rdfs:label xml:lang="en">ICN phylum</rdfs:label>
     </owl:Class>
     
@@ -3340,6 +3425,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000357">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>regnum</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000339"/>
         <rdfs:label xml:lang="en">ICN kingdom</rdfs:label>
     </owl:Class>
     
@@ -3350,6 +3436,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000358">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>subclassis</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000354"/>
         <rdfs:label xml:lang="en">ICN subclass</rdfs:label>
     </owl:Class>
     
@@ -3360,6 +3447,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000359">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>subordo</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000355"/>
         <rdfs:label xml:lang="en">ICN suborder</rdfs:label>
     </owl:Class>
     
@@ -3369,7 +3457,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000360">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
-        <NOMEN_0000017>Subdivision</NOMEN_0000017>
+        <NOMEN_0000017>subdivision</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000356"/>
         <rdfs:label xml:lang="en">ICN subphylum</rdfs:label>
     </owl:Class>
     
@@ -3380,6 +3469,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000361">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000353"/>
         <NOMEN_0000017>subregnum</NOMEN_0000017>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000357"/>
         <rdfs:label xml:lang="en">ICN subkingdom</rdfs:label>
     </owl:Class>
     
@@ -3390,6 +3480,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000363">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000018>sp.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000352"/>
         <rdfs:label xml:lang="en">ICN species</rdfs:label>
     </owl:Class>
     
@@ -3401,6 +3492,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000017>forma</NOMEN_0000017>
         <NOMEN_0000018>f.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000366"/>
         <rdfs:label xml:lang="en">ICN form</rdfs:label>
     </owl:Class>
     
@@ -3412,6 +3504,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000017>subforma</NOMEN_0000017>
         <NOMEN_0000018>subf.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000364"/>
         <rdfs:label xml:lang="en">ICN subform</rdfs:label>
     </owl:Class>
     
@@ -3423,6 +3516,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000017>subvarietas</NOMEN_0000017>
         <NOMEN_0000018>subvar.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000367"/>
         <rdfs:label xml:lang="en">ICN subvariety</rdfs:label>
     </owl:Class>
     
@@ -3434,6 +3528,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000017>varietas</NOMEN_0000017>
         <NOMEN_0000018>var.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000368"/>
         <rdfs:label xml:lang="en">ICN variety</rdfs:label>
     </owl:Class>
     
@@ -3444,6 +3539,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000368">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000006"/>
         <NOMEN_0000018>subsp.</NOMEN_0000018>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000363"/>
         <rdfs:label xml:lang="en">ICN subspecies</rdfs:label>
     </owl:Class>
     
@@ -3577,6 +3673,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001001"/>
         <rdfs:label xml:lang="en">ICNCP cultivar</rdfs:label>
     </owl:Class>
     
@@ -3586,7 +3683,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
-        <rdfs:label xml:lang="en">ICNCP_group</rdfs:label>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001002"/>
+        <rdfs:label xml:lang="en">ICNCP Group</rdfs:label>
     </owl:Class>
     
 
@@ -3595,6 +3693,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
         <rdfs:label xml:lang="en">ICNCP grex</rdfs:label>
     </owl:Class>
     
@@ -3631,6 +3730,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001003"/>
         <rdfs:label xml:lang="en">ICNCP graft-chimaera</rdfs:label>
     </owl:Class>
     
@@ -3668,6 +3768,46 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001012"/>
         <rdfs:label xml:lang="en">ICNCP superfluous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001052"/>
+        <rdfs:label xml:lang="en">ICZN supersubgenus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000307"/>
+        <rdfs:label xml:lang="en">ICZN supersupersubgenus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000301"/>
+        <rdfs:label xml:lang="en">ICZN infratribe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
+        <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
+        <rdfs:label xml:lang="en">ICTV kingdom</rdfs:label>
     </owl:Class>
     
 
