@@ -1162,6 +1162,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001056">
+        <rdfs:label xml:lang="en">ICPN</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1981,7 +1989,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
         <NOMEN_0000000>1758</NOMEN_0000000>
         <NOMEN_0000001>9999</NOMEN_0000001>
-        <rdfs:comment>The biological name that is applicable to animals.</rdfs:comment>
+        <rdfs:comment>International Code of Zoological Nomenclature (ICZN)</rdfs:comment>
         <rdfs:label xml:lang="en">ICZN name</rdfs:label>
     </owl:Class>
     
@@ -1991,7 +1999,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
-        <rdfs:comment>The biological name that is applicable to algae, fungi, or plants.</rdfs:comment>
+        <rdfs:comment>International Code of Nomenclature for algae, fungi, and plants (ICN)</rdfs:comment>
         <rdfs:label xml:lang="en">ICN name</rdfs:label>
     </owl:Class>
     
@@ -2001,7 +2009,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
-        <rdfs:comment>The biological name that is applicable to bacteria.</rdfs:comment>
+        <rdfs:comment>International Code of Nomenclature of Prokaryotes (ICNP)</rdfs:comment>
         <rdfs:label xml:lang="en">ICNP name</rdfs:label>
     </owl:Class>
     
@@ -2011,8 +2019,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
-        <rdfs:comment>The biological name that is applicable to viruses.</rdfs:comment>
-        <rdfs:label xml:lang="en">ICTV name</rdfs:label>
+        <rdfs:comment>The International Code of Virus Classification and Nomenclature (ICVCN)</rdfs:comment>
+        <rdfs:label xml:lang="en">ICVCN name</rdfs:label>
     </owl:Class>
     
 
@@ -2021,7 +2029,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000027"/>
-        <rdfs:label xml:lang="en">ICTV nomenclatural rank</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN nomenclatural rank</rdfs:label>
     </owl:Class>
     
 
@@ -2032,7 +2040,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>ord.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001054"/>
-        <rdfs:label xml:lang="en">ICTV order</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN order</rdfs:label>
     </owl:Class>
     
 
@@ -2043,7 +2051,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>fam.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000114"/>
-        <rdfs:label xml:lang="en">ICTV family</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN family</rdfs:label>
     </owl:Class>
     
 
@@ -2054,7 +2062,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>subfam.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000115"/>
-        <rdfs:label xml:lang="en">ICTV subfamily</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN subfamily</rdfs:label>
     </owl:Class>
     
 
@@ -2065,7 +2073,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>gen.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000116"/>
-        <rdfs:label xml:lang="en">ICTV genus</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN genus</rdfs:label>
     </owl:Class>
     
 
@@ -2076,7 +2084,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0000018>sp.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000117"/>
-        <rdfs:label xml:lang="en">ICTV species</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN species</rdfs:label>
     </owl:Class>
     
 
@@ -2104,7 +2112,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000111"/>
-        <rdfs:label xml:lang="en">ICTV valid</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN valid</rdfs:label>
     </owl:Class>
     
 
@@ -2113,7 +2121,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000111"/>
-        <rdfs:label xml:lang="en">ICTV invalid</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN invalid</rdfs:label>
     </owl:Class>
     
 
@@ -2122,7 +2130,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000125"/>
-        <rdfs:label xml:lang="en">ICTV accepted</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN accepted</rdfs:label>
     </owl:Class>
     
 
@@ -2131,7 +2139,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000125"/>
-        <rdfs:label xml:lang="en">ICTV unaccepted</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN unaccepted</rdfs:label>
     </owl:Class>
     
 
@@ -2151,7 +2159,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
-        <rdfs:comment>The biological name that is applicable to plant cultivars.</rdfs:comment>
+        <rdfs:comment>International Code of Nomenclature for Cultivated Plants (ICNCP)</rdfs:comment>
         <rdfs:label xml:lang="en">ICNCP name</rdfs:label>
     </owl:Class>
     
@@ -3807,7 +3815,26 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000113"/>
-        <rdfs:label xml:lang="en">ICTV kingdom</rdfs:label>
+        <rdfs:label xml:lang="en">ICVCN kingdom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000027"/>
+        <rdfs:label xml:lang="en">ICPN nomenclatural rank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
+        <rdfs:comment>International Code of Phytosociological Nomenclature (ICPN)</rdfs:comment>
+        <rdfs:label xml:lang="en">ICPN name</rdfs:label>
     </owl:Class>
     
 
