@@ -3860,6 +3860,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
+        <NOMEN_0000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1931</NOMEN_0000000>
+        <NOMEN_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</NOMEN_0000001>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.2.1</NOMEN_0000002>
+        <rdfs:label xml:lang="en">ICZN no diagnosis after 1930 and rejected before 2000</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4162,6 +4174,15 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001059"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000317"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001060"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
