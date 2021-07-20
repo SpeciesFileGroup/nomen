@@ -100,7 +100,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000004 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000004">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000374"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000393"/>
         <rdfs:label xml:lang="en">ICN basionym</rdfs:label>
     </owl:ObjectProperty>
     
