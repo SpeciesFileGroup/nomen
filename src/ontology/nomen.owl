@@ -2181,7 +2181,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
-        <rdfs:label xml:lang="en">ICZN non binomial</rdfs:label>
+        <rdfs:label xml:lang="en">ICZN non binominal</rdfs:label>
     </owl:Class>
     
 
@@ -2197,7 +2197,7 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1</NOMEN_0000002>
-        <rdfs:label xml:lang="en">ICZN not uninomial</rdfs:label>
+        <rdfs:label xml:lang="en">ICZN not uninominal</rdfs:label>
     </owl:Class>
     
 
@@ -2227,7 +2227,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000169"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1</NOMEN_0000002>
-        <rdfs:label xml:lang="en">ICZN species not binomial</rdfs:label>
+        <rdfs:label xml:lang="en">ICZN species not binominal</rdfs:label>
     </owl:Class>
     
 
@@ -2237,7 +2237,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000169"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.2</NOMEN_0000002>
-        <rdfs:label xml:lang="en">ICZN subspecies not trinomial</rdfs:label>
+        <rdfs:label xml:lang="en">ICZN subspecies not trinominal</rdfs:label>
     </owl:Class>
     
 
@@ -2743,6 +2743,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000225">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000224"/>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75.5</NOMEN_0000002>
         <NOMEN_0000054>dubium</NOMEN_0000054>
         <rdfs:label xml:lang="en">ICZN nomen dubium</rdfs:label>
     </owl:Class>
@@ -2774,7 +2775,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000229">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000223"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80</NOMEN_0000002>
-        <NOMEN_0000017 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conserved name</NOMEN_0000017>
         <rdfs:label xml:lang="en">ICZN Official List of Family-Group Names in Zoology</rdfs:label>
     </owl:Class>
     
