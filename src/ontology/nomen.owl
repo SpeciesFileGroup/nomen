@@ -86,6 +86,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001062 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001062">
+        <rdfs:label xml:lang="en">Zoonom status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001063 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001063">
+        <rdfs:label xml:lang="en">Zoonom_ARK</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1471,6 +1487,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000030"/>
         <NOMEN_0000017>common name</NOMEN_0000017>
+        <NOMEN_0001062>vernacular name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-P6ND9Q6D-6</NOMEN_0001063>
         <rdfs:label xml:lang="en">vernacular name</rdfs:label>
     </owl:Class>
     
@@ -1520,6 +1538,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000226"/>
+        <NOMEN_0001062>junior homonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-TB61NVV2-C</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN homonym</rdfs:label>
     </owl:Class>
     
@@ -1529,6 +1549,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000032"/>
+        <NOMEN_0001062>gender</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-N7SWQ663-6</NOMEN_0001063>
         <rdfs:label xml:lang="en">gender</rdfs:label>
     </owl:Class>
     
@@ -1990,6 +2012,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000036"/>
         <NOMEN_0000000>1758</NOMEN_0000000>
         <NOMEN_0000001>9999</NOMEN_0000001>
+        <NOMEN_0001062>nomen</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-HWT1L3JG-0</NOMEN_0001063>
         <rdfs:comment>International Code of Zoological Nomenclature (ICZN)</rdfs:comment>
         <rdfs:label xml:lang="en">ICZN name</rdfs:label>
     </owl:Class>
@@ -2095,6 +2119,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000226"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</NOMEN_0000002>
+        <NOMEN_0001062>rhizomonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-W3HQ7RVC-9</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN homonymy of type genus</rdfs:label>
     </owl:Class>
     
@@ -2172,6 +2198,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000107"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000223"/>
         <NOMEN_0000054>invalidum</NOMEN_0000054>
+        <NOMEN_0001062>anoplonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-DJW6GC2L-R</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN unavailable</rdfs:label>
     </owl:Class>
     
@@ -2181,6 +2209,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
+        <NOMEN_0001062>apeironym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-BFZW5J1V-W</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN non binominal</rdfs:label>
     </owl:Class>
     
@@ -2248,6 +2278,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
         <NOMEN_0000018>nom. nud.</NOMEN_0000018>
         <NOMEN_0000054>nudum</NOMEN_0000054>
+        <NOMEN_0001062>gymnonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-ZQ6WJ16L-P</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN nomen nudum</rdfs:label>
     </owl:Class>
     
@@ -2269,6 +2301,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
         <NOMEN_0000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1961</NOMEN_0000000>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.5.1; 15.1</NOMEN_0000002>
+        <NOMEN_0001062>eulabonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-SRJM0893-Z</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN conditionally proposed after 1960</rdfs:label>
     </owl:Class>
     
@@ -2387,6 +2421,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
         <NOMEN_0000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000</NOMEN_0000000>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.1</NOMEN_0000002>
+        <NOMEN_0001062>agnostonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-QCPTP23S-W</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN not indicated as new after 1999</rdfs:label>
     </owl:Class>
     
@@ -2723,6 +2759,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000223">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000107"/>
         <NOMEN_0000054>available</NOMEN_0000054>
+        <NOMEN_0001062>hoplonym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-MQ09G3C8-X</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN available</rdfs:label>
     </owl:Class>
     
@@ -2734,6 +2772,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000223"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000226"/>
         <NOMEN_0000054>valid</NOMEN_0000054>
+        <NOMEN_0001062>kyronym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-VWRSW7NM-S</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN valid</rdfs:label>
     </owl:Class>
     
@@ -2745,6 +2785,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000224"/>
         <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75.5</NOMEN_0000002>
         <NOMEN_0000054>dubium</NOMEN_0000054>
+        <NOMEN_0001062>aporionym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-JSZVH87D-F</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN nomen dubium</rdfs:label>
     </owl:Class>
     
@@ -2755,6 +2797,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000226">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000223"/>
         <NOMEN_0000054>invalidum</NOMEN_0000054>
+        <NOMEN_0001062>akyronym</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-H25VWWJK-R</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN invalid</rdfs:label>
     </owl:Class>
     
@@ -2784,6 +2828,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000293">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000027"/>
+        <NOMEN_0001062>nomenclatural rank</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-ZG7FTZFD-J</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN nomenclatural rank</rdfs:label>
     </owl:Class>
     
@@ -2793,6 +2839,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000295">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000293"/>
+        <NOMEN_0001062>family-group name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-Q3TF37GX-S</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN family-group</rdfs:label>
     </owl:Class>
     
@@ -2814,6 +2862,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>fam.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000296"/>
+        <NOMEN_0001062>family name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-VFCR3MGZ-6</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN family</rdfs:label>
     </owl:Class>
     
@@ -2835,6 +2885,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>subfam.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000300"/>
+        <NOMEN_0001062>subfamily name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-CMZP78CL-G</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN subfamily</rdfs:label>
     </owl:Class>
     
@@ -2856,6 +2908,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>subtr.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000305"/>
+        <NOMEN_0001062>subtribe name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-TVV5XD01-5</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN subtribe</rdfs:label>
     </owl:Class>
     
@@ -2867,6 +2921,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>superfam.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000003"/>
+        <NOMEN_0001062>superfamily name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-GBHSBCWL-S</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN superfamily</rdfs:label>
     </owl:Class>
     
@@ -2889,6 +2945,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000295"/>
         <NOMEN_0000018>tr.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000304"/>
+        <NOMEN_0001062>tribe name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-GBS5WRSW-3</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN tribe</rdfs:label>
     </owl:Class>
     
@@ -2898,6 +2956,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000306">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000293"/>
+        <NOMEN_0001062>genus-group name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-N50VT6SW-M</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN genus-group</rdfs:label>
     </owl:Class>
     
@@ -2940,6 +3000,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000306"/>
         <NOMEN_0000018>sgen.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0001051"/>
+        <NOMEN_0001062>subgeneric name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-TW3B8QJ4-S</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN subgenus</rdfs:label>
     </owl:Class>
     
@@ -2949,6 +3011,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000311">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000293"/>
+        <NOMEN_0001062>species-group name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-CD6397CK-5</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN species-group</rdfs:label>
     </owl:Class>
     
@@ -2960,6 +3024,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
         <NOMEN_0000018>sp.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000315"/>
+        <NOMEN_0001062>species name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-BCRH3FHN-9</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN species</rdfs:label>
     </owl:Class>
     
@@ -3007,6 +3073,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000311"/>
         <NOMEN_0000018>subsp.</NOMEN_0000018>
         <NOMEN_0001050 rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000312"/>
+        <NOMEN_0001062>subspecific name</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-Z2RTK54P-3</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN subspecies</rdfs:label>
     </owl:Class>
     
@@ -3832,6 +3900,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000055"/>
         <NOMEN_0000002>23.7.3</NOMEN_0000002>
+        <NOMEN_0001062>ichnotaxon</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-MNKZZ564-T</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN ichnotaxon</rdfs:label>
     </owl:Class>
     
@@ -3842,6 +3912,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000107"/>
         <NOMEN_0000002>42.2.1</NOMEN_0000002>
+        <NOMEN_0001062>collective group</NOMEN_0001062>
+        <NOMEN_0001063>http://data.loterre.fr/ark:/67375/FM8-FV0Q8594-L</NOMEN_0001063>
         <rdfs:label xml:lang="en">ICZN collective group</rdfs:label>
     </owl:Class>
     
