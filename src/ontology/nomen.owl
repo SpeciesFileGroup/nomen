@@ -1497,7 +1497,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
         <NOMEN_0000001>2011</NOMEN_0000001>
         <rdfs:label xml:lang="en">ICZN electronic only publication before 2012</rdfs:label>
     </owl:Class>
@@ -1507,7 +1507,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
         <NOMEN_0000000>2012</NOMEN_0000000>
         <rdfs:label xml:lang="en">ICZN electronic publication without ISSN or ISBN</rdfs:label>
     </owl:Class>
@@ -1517,7 +1517,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
         <NOMEN_0000000>2012</NOMEN_0000000>
         <rdfs:label xml:lang="en">ICZN electronic publication  not in PDF format</rdfs:label>
     </owl:Class>
@@ -1527,7 +1527,7 @@
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000174"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000168"/>
         <NOMEN_0000000>2012</NOMEN_0000000>
         <rdfs:label xml:lang="en">ICZN electronic publication not registered in ZooBank</rdfs:label>
     </owl:Class>
