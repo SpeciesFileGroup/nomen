@@ -1186,6 +1186,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NOMEN_0001064 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0001064">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000369"/>
+        <rdfs:label xml:lang="en">ICN originally invalid</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
