@@ -113,6 +113,15 @@
     
 
 
+    <!-- http://pulr.obolibrary.org/obo/NOMEN:0003010 -->
+
+    <owl:ObjectProperty rdf:about="http://pulr.obolibrary.org/obo/NOMEN:0003010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000272"/>
+        <rdfs:label xml:lang="en">ICZN unavailable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000004 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000004">
