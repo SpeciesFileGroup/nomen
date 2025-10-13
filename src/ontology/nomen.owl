@@ -122,6 +122,18 @@
     
 
 
+    <!-- http://pulr.obolibrary.org/obo/NOMEN:0003011 -->
+
+    <owl:ObjectProperty rdf:about="http://pulr.obolibrary.org/obo/NOMEN:0003011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOMEN_0000284"/>
+        <NOMEN_0000000 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1961</NOMEN_0000000>
+        <NOMEN_0000001 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1972</NOMEN_0000001>
+        <NOMEN_0000002 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.12</NOMEN_0000002>
+        <rdfs:label xml:lang="en">ICZN forgotten name rejected between 1961 and 1972</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NOMEN_0000004 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOMEN_0000004">
